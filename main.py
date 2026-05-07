@@ -200,7 +200,7 @@ class HornoApp(tk.Tk):
         try:
             temp = float(raw)
         except ValueError:
-            self.lbl_error.config(text="⚠ Ingresá un número válido.")
+            self.lbl_error.config(text="⚠ Ingresá un número válido. No se pueden usar letras ni números decimales")
             return
 
         # Validación de sensor (delegada a temperature.py)
